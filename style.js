@@ -44,5 +44,17 @@ document.getElementById("product-box-container").addEventListener('click' , func
 
     document.getElementById("total-price").innerText = finalPrice
 
+    alert("Product Added ✅")
    }
+
+})
+
+
+document.getElementById("make-purchase").addEventListener('click' , function(){
+  if(document.getElementById("product-cart-container").innerText !== ""){
+  alert("Purchases ✅✅")
+  document.getElementById("product-cart-container").innerText = "";
+  }else{
+    alert("Plese Add Some Product 🔴")
+  }
 })
